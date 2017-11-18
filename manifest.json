@@ -8,7 +8,6 @@
   "browser_action": {
    "default_icon": "src/icon128.png",
    "default_popup": "popup.html"
-   ""
   },
 
   "icons": {
@@ -16,11 +15,6 @@
    "19": "src/icon19.png",
    "48": "src/icon48.png",
    "128": "src/icon128.png"
-  },
-
-  "js": [
-   "content.js" ],
-  "run_at": "document_end"
   },
 
   "permissions": [
