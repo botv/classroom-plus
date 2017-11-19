@@ -8,9 +8,6 @@ function saveChanges() {
     alert('Error: No value specified');
     return;
   }
-  chrome.storage.sync.set({title: date}, function() {
-    alert('Settings saved');
-  });
 }
 
-saveChanges()
+saveChanges();
