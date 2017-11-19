@@ -7,3 +7,5 @@ function saveData() {
     file: 'assign.js'
   });
 }
+
+document.getElementById('submit').addEventListener('click', saveData);
