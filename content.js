@@ -1,6 +1,6 @@
 function displayData() {
   chrome.tabs.executeScript({
-    file: 'assign.js'
+    file: 'display.js'
   });
 }
 
