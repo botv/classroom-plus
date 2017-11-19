@@ -4,4 +4,4 @@ function displayData() {
   });
 }
 
-document.getElementById('submit').addEventListener('click', displayData);
+document.getElementById('test').addEventListener('click', displayData);
