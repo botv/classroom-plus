@@ -3,26 +3,18 @@
   <head>
   </head>
   <body>
-    <form>
-      <div id="newAssignment">
-        <fieldset>
-          <legend><strong>New Assignment</strong></legend>
-          <label>
-            <strong>Title</strong>
-            <input type="text" id="title" spellcheck="false">
-            <br /><br />
-          </label>
-          <label>
-            <strong>Date</strong>
-            <input type="date" id="date" spellcheck="false">
-            <br /><br />
-          </label>
-          <label>
-            <button id="assign">Create Assignment</button>
-            <script type="text/javascript" src="assignBackground.js"></script>
-          </label>
-        </fieldset>
-      </div>
-    </form>
+    <fieldset>
+      <legend><strong>New Assignment</strong></legend>
+      <strong>Title</strong>
+      <input type="text" id="title" spellcheck="false" name="title">
+      <br /><br />
+      <strong>Date</strong>
+      <input type="date" id="date" spellcheck="false" name="date">
+      <br /><br />
+      <button type="button" id="create">Create Assignment</button>
+      <button type="button" id="contents">Storage Contents</button>
+      <button type="button" id="clear">Clear Storage</button>
+      <script src="content.js"></script>
+    </fieldset>
   </body>
 </html>
