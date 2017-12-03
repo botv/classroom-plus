@@ -28,7 +28,6 @@
    "storage",
    "tabs",
    "<all_urls>",
-   "activeTabs",
    "clipboardWrite"
   ]
 }

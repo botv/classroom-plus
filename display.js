@@ -14,12 +14,22 @@ function toDo() {
           var div = '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><p>' + title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd">AssignMe</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
         }
         var output = [body.slice(0, index), div, body.slice(index)].join('');
-        if (document.location.href === 'https://classroom.google.com/u/0/a/not-turned-in/all' || document.location.href === 'https://classroom.google.com/a/not-turned-in/all' || document.location.href === 'file:///Users/benbotvinick/Desktop/GitHub/AssignMe/body.html') {
-          document.getElementById('yDmH0d').innerHTML = output;
-        }
+        document.getElementById('yDmH0d').innerHTML = output;
       }
     };
   });
+}
+
+function addElement () {
+  // create a new div element
+  // and give it some content
+  var newDiv = document.createElement("div");
+  var newContent = document.createTextNode("Hi there and greetings!");
+  newDiv.appendChild(newContent); //add the text node to the newly created div.
+
+  // add the newly created element and its content into the DOM
+  var currentDiv = document.getElementById("div1");
+  document.body.insertBefore(newDiv, currentDiv);
 }
 
 document.addEventListener('DOMContentLoaded', toDo);
