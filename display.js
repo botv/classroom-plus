@@ -30,7 +30,7 @@ function addElement () {
 
   // add the newly created element and its content into the DOM
   var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+  document.body.insertBefore(newDiv, .nextSibling);
 }
 
 document.addEventListener('DOMContentLoaded', toDo);
