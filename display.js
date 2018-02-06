@@ -14,11 +14,12 @@ function toDo() {
           var div = '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><p>' + title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd">AssignMe</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
         }
         var output = [body.slice(0, index), div, body.slice(index)].join('');
-        document.getElementById('yDmH0d').innerHTML = output;
+        console.log(output)
+        // document.getElementById('yDmH0d').innerHTML = output;
       }
     };
   });
-}
+};
 
 function addElement () {
   // create a new div element

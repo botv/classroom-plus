@@ -16,9 +16,9 @@
    "48": "src/icon48.png",
    "128": "src/icon128.png"
   },
-
+  
   "content_scripts": [{
-   "matches": ["https://classroom.google.com/u/0/a/not-turned-in/all", "https://classroom.google.com/a/not-turned-in/all", "file:///Users/benbotvinick/Desktop/GitHub/AssignMe/body.html"],
+   "matches": ["https://classroom.google.com/u/0/a/not-turned-in/all", "https://classroom.google.com/a/not-turned-in/all", "file:///Users/benbotvinick/Desktop/GitHub/assign-me/to_do.html"],
    "js": ["display.js"],
    "run_at": "document_end"
   }],
