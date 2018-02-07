@@ -6,6 +6,25 @@ window.addEventListener('load', function () {
   addElement()
 });
 
+function addElement () {
+
+  var newItem = document.createElement("div");
+  newItem.innerHTML = "<a href='https://benbotvinick.com'>Hello</a>";
+
+  var list = document.getElementsByClassName("Hello")[0];
+  list.appendChild(newItem);
+
+
+  var newDiv = document.createElement("div");
+  newDiv.innerHTML = "Hello";
+  var currentDiv = document.getElementsByClassName("KXQEKd")[0];
+  currentDiv.appendChild(newDiv);
+  var experimentalDiv = document.getElementsByClassName("Toffie")[0];
+  experimentalDiv.innerHTML = "Suck";
+  console.log("I got here")
+}
+
+/*
 function toDo() {
   var body = document.getElementById("yDmH0d").innerHTML;
   console.log(body)
@@ -32,15 +51,4 @@ function toDo() {
     }
   });
 }
-
-function addElement () {
-  console.log("WORKING")
-  var newDiv = document.createElement("div");
-  newDiv.setAttribute("class", "Toffie");
-  newDiv.innerHTML = "Hello";
-  var currentDiv = document.getElementsByClassName("KXQEKd")[0];
-  currentDiv.appendChild(newDiv);
-  var experimentalDiv = document.getElementsByClassName("Toffie")[0];
-  experimentalDiv.innerHTML = "Suck";
-  console.log("I got here")
-}
+*/
