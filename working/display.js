@@ -20,6 +20,6 @@ function toDo() {
         var output = [body.slice(0, index), div, body.slice(index)].join('');
         document.getElementById('yDmH0d').innerHTML = output;
       }
-    };
+    }
   });
 }
