@@ -1,7 +1,7 @@
 function getItems() {
-  chrome.storage.sync.get(null, function(items) {
-    console.log(items)
-  });
+    chrome.storage.sync.get(null, function(items) {
+        console.log(items)
+    });
 }
 
 function saveData() {
@@ -48,5 +48,5 @@ function clearData() {
 }
 
 document.getElementById('create').addEventListener('click', saveData);
-document.getElementById('contents').addEventListener('click', getItems);
 document.getElementById('clear').addEventListener('click', clearData);
+document.getElementById('contents').addEventListener('click', getItems);
