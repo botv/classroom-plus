@@ -4,6 +4,10 @@ function getItems() {
     });
 }
 
+function removeItem(item) {
+    chrome.storage.sync.remove(item)
+}
+
 function saveData() {
   var title = document.getElementById('title').value;
   var date = document.getElementById('date').value;

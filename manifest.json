@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "AssignMe for Classroom",
+  "name": "AssignMe",
   "short_name": "AssignMe",
   "description": "Create your own assignments on Google Classroom.",
   "version": "1.0",
@@ -27,7 +27,6 @@
    "activeTab",
    "storage",
    "tabs",
-   "<all_urls>",
-   "clipboardWrite"
+   "<all_urls>"
   ]
 }
