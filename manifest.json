@@ -1,32 +1,28 @@
 {
-  "manifest_version": 2,
-  "name": "AssignMe",
-  "short_name": "AssignMe",
-  "description": "Create your own assignments on Google Classroom.",
-  "version": "1.0",
+"manifest_version": 2,
+"name": "AssignMe",
+"short_name": "AssignMe",
+"description": "Create your own assignments on Google Classroom.",
+"version": "1.1",
 
-  "browser_action": {
-   "default_icon": "image/icon128.png",
-   "default_popup": "popup.html"
-  },
+"browser_action": {
+ "default_icon": "image/icon128.png",
+ "default_popup": "popup.html" },
 
-  "icons": {
-   "16": "image/icon16.png",
-   "19": "image/icon19.png",
-   "48": "image/icon48.png",
-   "128": "image/icon128.png"
-  },
+"icons": {
+ "16": "image/icon16.png",
+ "19": "image/icon19.png",
+ "48": "image/icon48.png",
+ "128": "image/icon128.png" },
 
-  "content_scripts": [{
-   "matches": ["https://classroom.google.com/*/not-turned-in/all"],
-   "js": ["display.js"],
-   "run_at": "document_end"
-  }],
+"content_scripts": [{
+ "matches": ["https://classroom.google.com/*/not-turned-in/all"],
+ "js": ["display.js"],
+ "run_at": "document_end" }],
 
-  "permissions": [
-   "activeTab",
-   "storage",
-   "tabs",
-   "<all_urls>"
-  ]
+"permissions": [
+ "activeTab",
+ "storage",
+ "tabs",
+ "<all_urls>" ]
 }
