@@ -1,6 +1,6 @@
 ![alt text](https://github.com/biggomega/assign-me/raw/master/image/tiles/marquee.png "AssignMe")
 # AssignMe
-[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/hblfkbdoflbakoblaknbjjhjbgfoofog.svg)](https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/users/ejpilpdcahcfkhanpikmgadenjhpchem.svg)](https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/hblfkbdoflbakoblaknbjjhjbgfoofog.svg)](https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/rating-count/hblfkbdoflbakoblaknbjjhjbgfoofog.svg)](https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog)
 ## Installation
