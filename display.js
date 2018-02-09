@@ -6,7 +6,7 @@ var newHeader = function (title) {
 };
 
 var newAssignment = function (options) {
-    return '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><p class="onkcGd m8aQlb">' + options.title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd" href="https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank">AssignMe</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + options.date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
+    return '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><a href="' + options.link + '" class="onkcGd m8aQlb">' + options.title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd" href="https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank">AssignMe</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + options.date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
 };
 
 var newSection = function (header, assignments) {
@@ -59,10 +59,12 @@ function toDo(cb) {
         for (var key in items) {
             if (key.substring(0, 9) == 'AssignMe.') {
                 var title = key.substr(9);
-                var date = items[key];
+                var date = items[key][0];
+                var link = items[key][1];
                 children.push(newAssignment({
                     title: title,
-                    date: date
+                    date: date,
+                    link: link
                 }));
             }
         }

@@ -1,9 +1,10 @@
 function saveItem() {
     var title = document.getElementById('title').value;
     var date = document.getElementById('date').value;
+    var link = document.getElementById('link').value
     if (title && date) {
         var data = {};
-        data["AssignMe." + title] = date;
+        data["AssignMe." + title] = [date, link];
         chrome.storage.sync.set(data);
         var status = document.getElementById('create');
         status.textContent = 'Creating...';
