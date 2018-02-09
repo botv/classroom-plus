@@ -9,7 +9,13 @@ function saveItem() {
         status.textContent = 'Creating...';
         setTimeout(function() {
           status.textContent = 'Create Assignment';
+          window.location.reload();
         }, 1000);
+        if (document.getElementById("reload").checked === true) {
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+            });
+        }
     } else if (!title && date) {
         var status = document.getElementById('create');
         status.textContent = 'Enter a title';
@@ -39,7 +45,13 @@ function removeItem(item) {
         status.textContent = 'Removing...';
         setTimeout(function() {
           status.textContent = 'Remove Assignment';
+          window.location.reload();
         }, 1000);
+        if (document.getElementById("reload").checked === true) {
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+            });
+        }
     } else {
         var status = document.getElementById('remove');
         status.textContent = 'Enter a title';
@@ -55,7 +67,13 @@ function clearItems() {
         status.textContent = 'Clearing...';
         setTimeout(function() {
             status.textContent = 'Clear Assignments';
+            window.location.reload();
         }, 1000);
+        if (document.getElementById("reload").checked === true) {
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+              chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+            });
+        }
     });
 }
 
