@@ -3,7 +3,7 @@
 "name": "AssignMe",
 "short_name": "AssignMe",
 "description": "Create your own assignments on Google Classroom.",
-"version": "2.0",
+"version": "2.1",
 
 "browser_action": {
  "default_icon": "image/icon128.png",
