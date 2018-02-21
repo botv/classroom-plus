@@ -3,7 +3,7 @@
 "name": "Classroom Plus",
 "short_name": "Classroom+",
 "description": "Create your own assignments on Google Classroom.",
-"version": "2.4.0",
+"version": "2.4.1",
 
 "browser_action": {
  "default_icon": "image/icon128.png",
