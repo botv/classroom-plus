@@ -12,7 +12,7 @@ function saveItem() {
           status.textContent = 'Create Assignment';
           window.location.reload();
         }, 1000);
-        if (document.getElementById("reload").checked === true) {
+        if (document.getElementById("reload").checked === true && window.location.href == "*://classroom.google.com/*/not-turned-in/all") {
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
               chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
             });
@@ -41,14 +41,14 @@ function saveItem() {
 function removeItem(item) {
     var title = document.getElementById('title').value;
     if (title) {
-        chrome.storage.sync.remove("AssignMe." + title)
+        chrome.storage.sync.remove("classroom-plus." + title)
         var status = document.getElementById('remove');
         status.textContent = 'Removing...';
         setTimeout(function() {
           status.textContent = 'Remove Assignment';
           window.location.reload();
         }, 1000);
-        if (document.getElementById("reload").checked === true) {
+        if (document.getElementById("reload").checked === true && window.location.href == "*://classroom.google.com/*/not-turned-in/all") {
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
               chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
             });
@@ -70,7 +70,7 @@ function clearItems() {
             status.textContent = 'Clear Assignments';
             window.location.reload();
         }, 1000);
-        if (document.getElementById("reload").checked === true) {
+        if (document.getElementById("reload").checked === true && window.location.href == "*://classroom.google.com/*/not-turned-in/all") {
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
               chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
             });

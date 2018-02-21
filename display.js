@@ -1,4 +1,4 @@
-var id = 'assign-me-container';
+var id = 'classroom-plus-container';
 window.addEventListener('load', init);
 
 var newHeader = function (title) {
@@ -57,8 +57,8 @@ function toDo(cb) {
     chrome.storage.sync.get(null, function(items) {
         var children = [];
         for (var key in items) {
-            if (key.substring(0, 9) == 'classroom-plus.') {
-                var title = key.substr(9);
+            if (key.substring(0, 15) == 'classroom-plus.') {
+                var title = key.substr(15);
                 var date = items[key][0];
                 var link = items[key][1];
                 children.push(newAssignment({
