@@ -1,4 +1,4 @@
-![alt text](https://github.com/biggomega/assign-me/raw/master/image/tiles/marquee.png "Classroom Plus")
+![alt text](https://github.com/biggomega/classroom-plus/raw/master/image/tiles/marquee.png "Classroom Plus")
 # Classroom Plus
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/hblfkbdoflbakoblaknbjjhjbgfoofog.svg)](https://chrome.google.com/webstore/detail/classroom-plus/hblfkbdoflbakoblaknbjjhjbgfoofog)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/rating/hblfkbdoflbakoblaknbjjhjbgfoofog.svg)](https://chrome.google.com/webstore/detail/classroom-plus/hblfkbdoflbakoblaknbjjhjbgfoofog/reviews)
