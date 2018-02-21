@@ -6,7 +6,7 @@ var newHeader = function (title) {
 };
 
 var newAssignment = function (options) {
-    return '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><a href="' + options.link + '" class="onkcGd m8aQlb">' + options.title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd" href="https://chrome.google.com/webstore/detail/assignme/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank">AssignMe</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + options.date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
+    return '<div class="F0D56 DShyMc-NTA3MDM0NDY2NFpa"><div class="jjooHc yxp05b-Wvd9Cc"><div class="gWn3p"><div class="aCP5yb"><a href="' + options.link + '" class="onkcGd m8aQlb">' + options.title + '</p></div><div class="h2eLLe Ya48ab"><a class="onkcGd BcZkCd" href="https://chrome.google.com/webstore/detail/classroom-plus/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank">Classroom Plus</a><div class="ipPCc UZ2pse IMvYId">—&nbsp;Due ' + options.date + '</div></div></div><div class="ubVkr pQCS0d"></div></div></div>';
 };
 
 var newSection = function (header, assignments) {
@@ -57,7 +57,7 @@ function toDo(cb) {
     chrome.storage.sync.get(null, function(items) {
         var children = [];
         for (var key in items) {
-            if (key.substring(0, 9) == 'AssignMe.') {
+            if (key.substring(0, 9) == 'classroom-plus.') {
                 var title = key.substr(9);
                 var date = items[key][0];
                 var link = items[key][1];
@@ -71,6 +71,6 @@ function toDo(cb) {
         if (!children.length) {
             return cb("")
         }
-        cb(newSection('AssignMe', children));
+        cb(newSection('Classroom Plus', children));
     });
 }

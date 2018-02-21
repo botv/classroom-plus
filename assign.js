@@ -4,7 +4,7 @@ function saveItem() {
     var link = document.getElementById('link').value
     if (title && date) {
         var data = {};
-        data["AssignMe." + title] = [date, link];
+        data["classroom-plus." + title] = [date, link];
         chrome.storage.sync.set(data);
         var status = document.getElementById('create');
         status.textContent = 'Creating...';
