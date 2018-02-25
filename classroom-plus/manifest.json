@@ -2,7 +2,7 @@
   "name": "Classroom Plus",
   "short_name": "Classroom+",
   "description": "Create your own assignments on Google Classroom.",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 
