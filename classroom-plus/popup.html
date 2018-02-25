@@ -2,12 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-      body {
-        height: 300px;
-        background-color: #212121;
-      }
-    </style>
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
     <br />
@@ -18,9 +13,6 @@
         </div>
         <div class="form-group">
           <input type="date" class="form-control" id="date" placeholder="Assignment date">
-          <script>
-            document.getElementById('date').value = new Date().toDateInputValue();
-          </script>
         </div>
         <div class="form-group">
           <input type="text" class="form-control" id="link" placeholder="Assignment link">
@@ -36,14 +28,13 @@
           <button type="button" class="btn btn-dark" id="create" style="width: 200px;">Create Assignment</button>
           <button type="button" class="btn btn-dark" id="remove" style="width: 200px;">Remove Assignment</button>
           <button type="button" class="btn btn-dark" id="clear" style="width: 200px;">Clear Assignments</button>
-          <script src="assign.js"></script>
-
           <a class="btn btn-dark" href="https://classroom.google.com/a/not-turned-in/all" target="_blank" role="button">My Assignments</a>
-          <a class="btn btn-dark" href="https://chrome.google.com/webstore/detail/classroom-plus/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank" role="button">Extension Info</a>
-          <a class="btn btn-dark" href="http://benbotvinick.com" target="_blank" role="button">Developer</a>
+          <a class="btn btn-dark" href="https://chrome.google.com/webstore/detail/hblfkbdoflbakoblaknbjjhjbgfoofog" target="_blank" role="button">Extension Info</a>
         </div>
       </form>
     </div>
     <br />
+    <script src="analytics.js"></script>
+    <script src="assign.js"></script>
   </body>
 </html>
