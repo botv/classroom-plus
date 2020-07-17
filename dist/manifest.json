@@ -1,0 +1,28 @@
+{
+  "name": "Classroom Plus",
+  "short_name": "Classroom+",
+  "description": "Create your own assignments on Google Classroom.",
+  "version": "2.4.4",
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "19": "assets/icons/icon19.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}

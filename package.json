@@ -1,0 +1,43 @@
+{
+  "name": "classroom-plus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Create your own assignments on Google Classroom.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botv/classroom-plus.git"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/botv/classroom-plus/issues"
+  },
+  "homepage": "https://github.com/botv/classroom-plus#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "formik": "^2.1.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "source-map-loader": "^1.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
